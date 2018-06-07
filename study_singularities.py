@@ -264,7 +264,7 @@ class Polynomial:
 #------------------------------------------------------------------------------
 
 def load_minimal_subpolytopes():
-	with open('Dropbox/python/multiplicity/new_minimal_subpolytopes.txt', 'r') as f:
+	with open('path/to/list/of/minimal/subpolytopes.txt', 'r') as f:
 		list_msp = [eval(line) for line in f]
 	return [Polynomial([Monomial(m) for m in p]) for p in list_msp]
 
